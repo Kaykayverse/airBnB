@@ -267,4 +267,7 @@
     align-items: center;
     margin: 0 auto;
 }
+.signed-text{
+    font-family: monospace;
+}
 

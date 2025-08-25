@@ -674,4 +674,7 @@ footer{
     .main_header h2{
         font-size: 12px;
     }
+    .main_header{
+    width: 104%;
+   }
 }

@@ -144,3 +144,59 @@ cardEl.forEach((card)=>{
         window.location = 'room.html';
     })
 });
+
+// footer javascript
+
+const uniqueBtn = document.getElementById('unique')
+const travelBtn = document.getElementById('travel')
+const friendBtn = document.getElementById("friend")
+const uniqueConEl = document.getElementById('unique-con')
+const travelConEl = document.getElementById('travel-con')
+const friendConEl = document.getElementById('friend-con')
+
+const footerNavEl = document.querySelector('.footer-nav')
+
+footerNavEl.addEventListener("click",(e)=>{
+    console.log(e.target);
+    if(e.target === uniqueBtn){
+        uniqueBtn.classList.add('active')
+        uniqueConEl.classList.add('show')
+    }
+    else{
+        uniqueBtn.classList.remove("active")
+        uniqueConEl.classList.remove('show')
+        
+    }
+})
+
+footerNavEl.addEventListener("click",(e)=>{
+    console.log(e.target);
+    if(e.target === travelBtn){
+        travelBtn.classList.add('active')
+        travelConEl.classList.add('show')
+    }
+    else{
+        travelBtn.classList.remove("active")
+        travelConEl.classList.remove('show')
+        
+    }
+})
+
+footerNavEl.addEventListener("click",(e)=>{
+    console.log(e.target);
+    if(e.target === friendBtn){
+        friendBtn.classList.add('active')
+        friendConEl.classList.add('show')
+    }
+    else{
+        friendBtn.classList.remove("active")
+        friendConEl.classList.remove('show')
+        
+    }
+})
+
+// if(e.target === travelBtn){
+//         travelBtn.classList.add('active')
+//     }else if(e.target === friendBtn){
+//         friendBtn.classList.add('active')
+//     }

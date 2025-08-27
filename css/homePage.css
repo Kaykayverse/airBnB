@@ -480,6 +480,10 @@ footer{
     border-bottom: 2px solid ;
     font-weight: 600;
 }
+.first_section .footer-nav span.activenon{
+    border-bottom: 0px solid ;
+    font-weight: 600;
+}
 
 
 .first_section span a{
@@ -491,6 +495,12 @@ footer{
 
 
 .footer-nav-container{
+    display: none;
+    grid-template-columns: repeat(6 ,1fr);
+    column-gap: 5px;
+    row-gap: 20px;
+}
+.footer-nav-container.show{
     display: grid;
     grid-template-columns: repeat(6 ,1fr);
     column-gap: 5px;

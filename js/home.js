@@ -1,3 +1,4 @@
+// ----------------------function to create the search sections on scroll------------------
 function createSearchContent (){
     const textObj = {
         name1: 'Anywhere',
@@ -62,6 +63,11 @@ function createSearchContent (){
 }
 
 createSearchContent()
+
+
+
+//------------------------------ STICKY NAV HEADER BAR-----------------------------------
+
 if(window.innerWidth <= 850){
         searchEl.style.display = 'none';
 }
@@ -90,6 +96,7 @@ function windSrcoll(){
 
 window.addEventListener('scroll', windSrcoll);
 
+// --------------------------DROP DOWN MENU------------------------------------
 window.addEventListener('click',(e)=>{
     console.log(e.target);
     if(e.target === document.querySelector('.fa-bars')){
@@ -100,9 +107,11 @@ window.addEventListener('click',(e)=>{
 });
 
 
+//-------------------------------SLIDER SCRIPT----------------------------------------
+
 // const sliderEl = document.querySelectorAll('.card_container');
 // const sliderLength = document.querySelectorAll('.slide').length;
-const sliderLength = 4;
+const sliderLength = 3;
 const prevBtnEl = document.querySelectorAll('.prev');
 const nextBtnEl = document.querySelectorAll('.next');
 let currentIndex = 0;

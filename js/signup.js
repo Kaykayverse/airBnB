@@ -111,11 +111,9 @@ function updateProfile(){
         if(profileIcon.classList.contains('profile-icon')){
             bannerNameEl.innerText = localFNameFull;
         }
-        // const logoutinEl = document.querySelector('.loginout-wraper');
-        // logoutinEl.innerHTML = `<h4 id="logoutbtn">Log out</h4>`;
+
     }else{
         profileIcon.style.backgroundColor = 'transparent';
-        // profileIcon.innerHTML = `<i class="fa-solid fa-globe"></i>`;
         if(profileIcon.classList.contains('profile-icon')){
             profileIcon.innerHTML = `<i class="fa-solid fa-circle-user" style="font-size: 30px;"></i>`;
             bannerNameEl.innerText = "";
@@ -125,8 +123,7 @@ function updateProfile(){
         }
         logsignEl.style.display = 'block';
         logoutBtnEl.style.display = 'none';
-        // const logoutinEl = document.querySelector('.loginout-wraper');
-        // logoutinEl.innerHTML = `<h4 id="logsignbtn">Log in or sign up</h4>`;
+
     }
 }
 
